@@ -11,6 +11,8 @@
 See [the official website](https://chartjs-runtime-vis-linter.now.sh).
 See [Online Demo](https://chartjs-runtime-vis-linter-demo.now.sh).
 
+Stories for the demo are in the following folder:: stories/index.stories.js
+
 ## :anchor: Versioning Policy
 
 This plugin is following [Semantic Versioning](https://semver.org/) 
