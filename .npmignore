@@ -1,0 +1,6 @@
+stories/
+.storybook/
+docs/
+storybook-static/
+node_modules/
+.eslintrc
