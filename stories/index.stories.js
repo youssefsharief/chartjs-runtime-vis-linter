@@ -1,6 +1,6 @@
 import { Chart } from 'chart.js'
 import { checkBarChart } from '../rules/bar/index'
-import { checkPieChart} from '../rules/pie/index'
+import { checkPieChart } from '../rules/pie/index'
 import { checkLineChart } from '../rules/line/index'
 
 
@@ -38,6 +38,53 @@ export const barChartWithNoWarnings = () => {
     checkBarChart(barChart)
     return canvas
 };
+
+
+
+// export const barChartWitBadLabels = () => {
+//     const canvas = document.createElement('canvas')
+//     const ctx = canvas.getContext('2d');
+//     const barChart = new Chart(ctx, {
+//         type: 'bar',
+//         data: {
+//             labels: ["Asia", "Africa", "Europe", "North America", "Latin America"],
+//             //data locates in : barChart -> chart -> data -> datasets/labels
+//             //title locates in: barChart -> chart -> config
+//             datasets: [
+//                 {
+//                     label: "Population (millions)",
+//                     backgroundColor: "#3e95cd",
+//                     data: [5267, 2478, 784, 734, 433]
+//                 }
+//             ]
+//         },
+//         options: {
+//             scales: {
+//                 xAxes: [{
+//                     display: true,
+//                     ticks: {
+//                         maxRotation: 90,
+//                         minRotation: 65
+//                     },
+//                     barPercentage: 1,
+//                     categoryPercenatge: 1
+//                 }]
+//             }
+//         },
+//         legend: { display: false },
+//         title: {
+//             display: true,
+//             text: 'Predicted world population (millions) in 2050'
+//         }
+//     })
+//     checkBarChart(barChart)
+//     return canvas
+// };
+
+
+
+
+
 
 export const barChartWithDifferentColorsAnNotOrdered = () => {
     const canvas = document.createElement('canvas')
@@ -115,20 +162,20 @@ export const pieChartWithNoWarnings = () => {
     const pie = new Chart(ctx, {
         type: 'pie',
         data: {
-          labels: ["Asia", "Africa", "Europe", "Latin America"],
-          datasets: [{
-            label: "Population (millions)",
-            backgroundColor: ["#8e5ea2","#3e95cd","#3cba9f","#e8c3b9"],
-            data: [5267, 2478,734,784]
-          }]
+            labels: ["Asia", "Africa", "Europe", "Latin America"],
+            datasets: [{
+                label: "Population (millions)",
+                backgroundColor: ["#8e5ea2", "#3e95cd", "#3cba9f", "#e8c3b9"],
+                data: [5267, 2478, 734, 784]
+            }]
         },
         options: {
-          title: {
-            display: true,
-            text: 'Predicted world population (millions) in 2050'
-          }
+            title: {
+                display: true,
+                text: 'Predicted world population (millions) in 2050'
+            }
         }
-    });    
+    });
     checkPieChart(pie)
     return canvas
 };
@@ -139,20 +186,20 @@ export const pieChartWith4Categories = () => {
     const pie = new Chart(ctx, {
         type: 'pie',
         data: {
-          labels: ["Africa", "Asia", "Europe", "Latin America"],
-          datasets: [{
-            label: "Population (millions)",
-            backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
-            data: [2478,5267,734,784]
-          }]
+            labels: ["Africa", "Asia", "Europe", "Latin America"],
+            datasets: [{
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9"],
+                data: [2478, 5267, 734, 784]
+            }]
         },
         options: {
-          title: {
-            display: true,
-            text: 'Predicted world population (millions) in 2050'
-          }
+            title: {
+                display: true,
+                text: 'Predicted world population (millions) in 2050'
+            }
         }
-    });    
+    });
     checkPieChart(pie)
     return canvas
 };
@@ -163,20 +210,20 @@ export const pieChartWith6Categories = () => {
     const pie = new Chart(ctx, {
         type: 'pie',
         data: {
-          labels: ["Africa", "Asia", "Europe", "Latin America", "North America","Antarctic"],
-          datasets: [{
-            label: "Population (millions)",
-            backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#F781BF"],
-            data: [2478,5267,734,784,433,100]
-          }]
+            labels: ["Africa", "Asia", "Europe", "Latin America", "North America", "Antarctic"],
+            datasets: [{
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", "#F781BF"],
+                data: [2478, 5267, 734, 784, 433, 100]
+            }]
         },
         options: {
-          title: {
-            display: true,
-            text: 'Predicted world population (millions) in 2050'
-          }
+            title: {
+                display: true,
+                text: 'Predicted world population (millions) in 2050'
+            }
         }
-    });    
+    });
     checkPieChart(pie)
     return canvas
 };
