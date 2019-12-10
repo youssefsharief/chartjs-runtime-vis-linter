@@ -180,7 +180,7 @@ export const pieChartWithNoWarnings = () => {
     return canvas
 };
 
-export const pieChartWith4Categories = () => {
+export const unorderedPieChart = () => {
     const canvas = document.createElement('canvas')
     const ctx = canvas.getContext('2d');
     const pie = new Chart(ctx, {
@@ -339,7 +339,7 @@ export const lineChartWithManyLines = () => {
 };
 
 
-export const problematicLineChartForColorBlind = () => {
+export const greenWithRedLineCharts = () => {
     const canvas = document.createElement('canvas')
     const ctx = canvas.getContext('2d');
     const chart = new Chart(ctx, {
@@ -386,7 +386,7 @@ export const problematicLineChartForColorBlind = () => {
 
 
 
-export const problematicLineChartForColorBlind2 = () => {
+export const greenWithOrangeLineCharts = () => {
     const canvas = document.createElement('canvas')
     const ctx = canvas.getContext('2d');
     const chart = new Chart(ctx, {
