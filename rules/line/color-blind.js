@@ -14,7 +14,7 @@ export const colorBlind = (chart) => {
         }
     }
     if (isRedOrOrangeFound && isGreenFound) {
-        console.warn('This chart is problematic for color blinds. Read this for more info here')
+        console.warn('This chart is problematic for color blinds. Read more here https://chartjs-runtime-vis-linter.now.sh/rules/#color-blind')
     }
 }
 

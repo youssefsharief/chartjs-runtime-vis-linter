@@ -18,6 +18,6 @@ export const consistentColors = (barChart) => {
         return count;
     }
     if (countColor(bar) > 3) {
-        console.warn("Use consistent colors. Use one color for bar charts. You may use an accent color to highlight a significant data point.")
+        console.warn("Use consistent colors. Use one color for bar charts. You may use an accent color to highlight a significant data point. https://chartjs-runtime-vis-linter.now.sh/rules/#bar-chart-consistent-colors")
     }
 }

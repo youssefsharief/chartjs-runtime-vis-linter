@@ -6,7 +6,7 @@ export const checkPieLargeOnePos = (pieChart) => {
     for (let index = 0; index < maxData.length; index++) {
         const element = maxData[index];
         if (element > zeroPosVal) {
-            console.warn(`Order slices correctly by first placing the largest  section at 12 o’clock stretching clockwise, and then placing the remaining sections consistently either clockwise or counter-clockwise in descending order.`);
+            console.warn(`Order slices correctly by first placing the largest  section at 12 o’clock stretching clockwise, and then placing the remaining sections consistently either clockwise or counter-clockwise in descending order. Read more here https://chartjs-runtime-vis-linter.now.sh/rules/#pie-chart-order`);
         }
     }
 }

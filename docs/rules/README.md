@@ -14,6 +14,8 @@
 > Order quantitaive values either from highest to lowest or from lowest to highest
 This rule is automatically used when calling the checkBarChart method
 
+### :books: Further reading
+- [Order data](https://www.data-to-viz.com/caveat/order_data.html)
 
 ### :mag: Implementation
 
@@ -38,14 +40,23 @@ This rule is automatically used when calling the checkBarChart method and when c
 This rule is automatically used when calling the checkLineChart method
 
 ### :books: Further reading
-[Mor about colors in general](https://blog.datawrapper.de/colors/)
+[More about colors in general](https://blog.datawrapper.de/colors/)
 
 ### :mag: Implementation
 
 - [Rule source](https://github.com/youssefsharief/chartjs-runtime-vis-linter/blob/master/rules/line/color-blind.js)
 
 
+## no-more-than-4-lines
+> Do not have more than 4 lines in one graph
+This rule is automatically used when calling the checkLineChart method
 
+### :books: Further reading
+[Spaghetti lines](https://www.data-to-viz.com/caveat/spaghetti.html)
+
+### :mag: Implementation
+
+- [Rule source](https://github.com/youssefsharief/chartjs-runtime-vis-linter/blob/master/rules/line/no-more-than-4-lines.js)
 
 ## no-more-than-5-in-pie
 > Do not use more than 5 categories in a pie chart
@@ -72,14 +83,3 @@ This rule is automatically used when calling the checkPieChart method
 - [Rule source](https://github.com/youssefsharief/chartjs-runtime-vis-linter/blob/master/rules/pie/no-more-than-5-pie.js)
 
 
- 
-<!-- ## no-more-than-four-lines
-> Do not have more than 4 lines in one graph
-This rule is automatically used when calling the checkLineChart method
-
-### :books: Further reading
-[Mor about colors in general]: https://blog.datawrapper.de/colors/
-
-### :mag: Implementation
-
-- [Rule source](https://github.com/youssefsharief/chartjs-runtime-vis-linter/blob/master/rules/line/no-more-than-4-lines.js) -->
